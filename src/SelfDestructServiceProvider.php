@@ -1,6 +1,6 @@
 <?php
 
-namespace RobertHucks\SelfDestruct;
+namespace roberthucks\selfdestruct;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -12,11 +12,11 @@ class SelfDestructServiceProvider extends ServiceProvider {
 
     public function register()
     {
-        $this->app->singleton('RobertHucks.SelfDestruct.Console.Kernel', function($app) {
+        $this->app->singleton('roberthucks.selfdestruct.Console.Kernel', function($app) {
             $dispatcher = $app->make(\Illuminate\Contracts\Events\Dispatcher::class);
-            return new \RobertHucks\SelfDestruct\Console\Kernel($app, $dispatcher);
+            return new \roberthucks\selfdestruct\Console\Kernel($app, $dispatcher);
         });
 
-        $this->app->make('RobertHucks.SelfDestruct.Console.Kernel');
+        $this->app->make('roberthucks.selfdestruct.Console.Kernel');
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace RobertHucks\SelfDestruct\Models;
+namespace roberthucks\selfdestruct\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

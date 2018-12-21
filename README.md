@@ -33,7 +33,7 @@ php artisan migrate
 3) Configure models
 
 The first step here is to add the `Trait` to the `Model`.
-Add `use RobertHucks\SelfDestruct\Traits\SelfDestruct;` and then user it inside your `Model`s class like so `use SelfDestruct;`
+Add `use roberthucks\selfdestruct\Traits\SelfDestruct;` and then user it inside your `Model`s class like so `use SelfDestruct;`
 Once these have been added to your `Model` you need to then add a property called `$life_time`. This is the amount of seconds that a `Model` should stay alive for.
 
 Here is how a `Model` looks when modified:
@@ -44,7 +44,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use RobertHucks\SelfDestruct\Traits\SelfDestruct;
+use roberthucks\selfdestruct\Traits\SelfDestruct;
 
 class Post extends Model
 {

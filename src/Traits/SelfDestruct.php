@@ -1,9 +1,9 @@
 <?php
 
-namespace RobertHucks\SelfDestruct\Traits;
+namespace roberthucks\selfdestruct\Traits;
 
-use RobertHucks\SelfDestruct\Models\Destructor;
-use RobertHucks\SelfDestruct\Exceptions\MissingAttributeOnModel;
+use roberthucks\selfdestruct\Models\Destructor;
+use roberthucks\selfdestruct\Exceptions\MissingAttributeOnModel;
 
 trait SelfDestruct {
     public static function bootSelfDestruct()

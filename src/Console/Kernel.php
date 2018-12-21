@@ -1,10 +1,10 @@
 <?php
 
-namespace RobertHucks\SelfDestruct\Console;
+namespace roberthucks\selfdestruct\Console;
 
 use App\Console\Kernel as ConsoleKernel;
 use Illuminate\Console\Scheduling\Schedule;
-use RobertHucks\SelfDestruct\Models\Destructor;
+use roberthucks\selfdestruct\Models\Destructor;
 use Log;
 
 class Kernel extends ConsoleKernel
