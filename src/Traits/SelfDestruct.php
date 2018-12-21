@@ -10,9 +10,12 @@ trait SelfDestruct {
     {
         static::created(function ($model) {
             if ($model->created_at && $model->life_time) {
+                $ttl = new \DateTime($model->created_at);
+                $ttl->add( new \DateInterval("PT{$model->life_time}S"));
                 Destructor::create([
                     'deletable_type' => get_class($model),
-                    'deletable_id' => $model->getKey()
+                    'deletable_id' => $model->getKey(),
+                    'ttl' => $ttl,
                 ]);
             } else {
                 if (!isset($model->created_at)) {

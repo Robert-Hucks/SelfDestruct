@@ -13,5 +13,12 @@
         "psr-4": {
             "RobertHucks\\SelfDestruct\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RobertHucks\\SelfDestruct\\SelfDestructServiceProvider"
+            ]
+        }
     }
 }
