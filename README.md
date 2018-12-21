@@ -21,7 +21,7 @@ This package works by using the provided `Trait` on a `Model` which hooks in to 
 1) Adding the package to your project.
 
 ```bash
-composer require RobertHucks/SelfDestruct
+composer require roberthucks/selfdestruct
 ```
 
 2) Run migration to create the table
