@@ -1,5 +1,5 @@
 {
-    "name": "RobertHucks/SelfDestruct",
+    "name": "roberthucks/selfdestruct",
     "description": "A package used to give Laravel Models the ability to self-delete after a specified time.",
     "type": "library",
     "authors": [
@@ -17,7 +17,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "RobertHucks\\SelfDestruct\\SelfDestructServiceProvider"
+                "roberthucks\\selfdestruct\\SelfDestructServiceProvider"
             ]
         }
     }
