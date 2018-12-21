@@ -1,0 +1,17 @@
+{
+    "name": "RobertHucks/SelfDestruct",
+    "description": "A package used to give Laravel Models the ability to self-delete after a specified time.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Robert Hucks",
+            "email": "rahucks@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "RobertHucks\\SelfDestruct\\": "src/"
+        }
+    }
+}
