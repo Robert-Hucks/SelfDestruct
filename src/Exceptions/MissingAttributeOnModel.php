@@ -1,6 +1,6 @@
 <?php
 
-namespace roberthucks\selfdestruct\Exceptions;
+namespace RobertHucks\SelfDestruct\Exceptions;
 
 use InvalidArgumentException;
 
