@@ -22,7 +22,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "roberthucks\\selfdestruct\\SelfDestructServiceProvider"
+                "roberthucks\\selfdestruct\\src\\SelfDestructServiceProvider"
             ]
         }
     }
