@@ -14,7 +14,7 @@ class Kernel extends ConsoleKernel
         parent::schedule($schedule);
 
         $schedule->call(function () {
-            $models = Destructor::whereTime('ttl', '<=', new \DateTime())->get();
+            $models = Destructor::whereDate('ttl', '<=', new \DateTime())->get();
             foreach($models as $model) {
                 $model->deletable_type::find($model->deletable_id)->delete();
                 $model->delete();
