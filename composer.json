@@ -16,13 +16,13 @@
     ],
     "autoload": {
         "psr-4": {
-            "RobertHucks\\SelfDestruct\\": "src/"
+            "roberthucks\\selfdestruct\\": "packages/roberthucks/selfdestruct/src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "roberthucks\\selfdestruct\\src\\SelfDestructServiceProvider"
+                "roberthucks\\selfdestruct\\SelfDestructServiceProvider"
             ]
         }
     }
