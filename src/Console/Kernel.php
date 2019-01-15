@@ -15,7 +15,7 @@ class Kernel extends ConsoleKernel
 
         $schedule->call(function () {
             $date = new \DateTime();
-            $models = Destructor::whereDate('ttl', '<=', $date->format('Y-m-d'))->whereTime('ttl', '<=', $date->format('H:i:s'))->get();
+            $models = Destructor::where('ttl', '<=', $date->format('Y-m-d H:i:s'))->get();
             foreach($models as $model) {
                 $model->deletable_type::withTrashed()->find($model->deletable_id)->delete();
                 $model->delete();
